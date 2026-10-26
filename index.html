@@ -39,7 +39,7 @@ full_title: 北京卓瑞斯光电科技有限公司 - 激光镜头、场镜、�
                     	<ul>
                         	 {% for post in site.categories["news"] %}
 							<li>
-                            	<div class="time">{{ page.date | date: "%Y-%m-%d" }}</div>
+                            	<div class="time">{{ post.date | date: "%Y-%m-%d" }}</div>
                                 <div class="title">
                                 	<a href="{{ post.url }}">{{ post.title }}</a>
                                 </div>
