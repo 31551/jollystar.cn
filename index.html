@@ -1,0 +1,114 @@
+---
+layout: default
+category: home
+full_title: 北京卓瑞斯光电科技有限公司 - 激光镜头、场镜、远心镜头、石英镜头、激光加工、激光钻孔、激光切割 
+---
+<!--幻灯片-->
+<div id="banner" class="banner"> 
+    <div id="owl-demo" class="owl-carousel"> 
+        <a class="item" target="_blank" href="" style="background-image:url(/Assets/upload/banner.jpg)">
+            <img src="/Assets/upload/banner.jpg" alt="">
+        </a>
+        <a class="item" target="_blank" href="" style="background-image:url(/Assets/upload/banner1.jpg)">
+            <img src="/Assets/upload/banner1.jpg" alt="">
+        </a>
+    </div>
+</div>
+<!--幻灯片-->
+<div class="wrap wrap_a clearfix">
+	<div class="i_about">
+    	<h1><a href=""><em>JOLLYSTAR</em> 北京卓瑞斯</a></h1>
+        <dl class="clearfix">
+        	<dt><a href=""><img src="/Assets/upload/pic1.jpg" alt=""/></a></dt>
+            <dd>
+            	<p>北京卓瑞斯光电科技有限公司成立于2007年10月，是一家研发、生产、销售各种光学元件、成像系统产品、激光系统相关等光学产品的高科技民营公司。公司主营业务为激光光学系统、医疗光学系统、红外光学系统的开发、制造、销售等。 </p>
+                <p>我公司研发、生产的红外、绿光和紫外激光场镜和扩束镜头，以自有品牌JOLLYSTAR在全球销售，被广泛应用于激光标刻、精密切割、太阳能电池板SE和PERC、激光精密钻孔、激光精密焊接等应用领域。我公司产品合理的价格和高品质获得全球客户的青睐。</p>
+                <p>我公司采用标准化和定制化服务相结合的经营模式，以高品质的产品为立足点，以技术服务于市场为导向，以先进优良的自动化生产和测试装备为保障，以科学规范的管理，务实高效的决策，朝气蓬勃的高素质员工团队为依托，为客户提供持续的优良产品生产服务和品质保证。</p>
+            </dd>
+        </dl>
+    </div>
+    <div class="i_news">
+    	<div class="top">
+        	<em>&nbsp;</em>新闻动态
+            <a href="news.html">更多新闻</a>
+        </div>
+        <div class="i_m">
+            <div id="scrollbar1">
+                <div class="scrollbar">
+                    <div class="content">
+                    	<ul>
+                        	 {% for post in site.categories["news"] %}
+							<li>
+                            	<div class="time">{{ page.date | date: "%Y-%m-%d" }}</div>
+                                <div class="title">
+                                	<a href="{{ post.url }}">{{ post.title }}</a>
+                                </div>
+                            </li>
+							{% endfor %}
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg_a">
+	<div class="wrap wrap_b">
+    	<div class="i_name">我们的产品</div>
+        <div class="i_m">
+        	<div class="box mainPhoto"> <span class="goleft nextPage"><a href="javascript:void(0)"><img src="/Assets/images/prev.png" /></a></span>
+              <div class="go slidegrid">
+                <ul class="slideitems">
+                  <li>
+                  	<a href="/product.html">
+                    	<div class="title">1064nm激光场镜</div>
+                        <img src="/images/products/W1064.jpg" alt="1064nm激光场镜"/>
+                        <div class="des">1064nm激光场镜适用于所有工作波长为1064nm的各类激光设备，包括但不限于固体激光器、光纤激光器等设备。</div>
+                    </a>
+                  </li>
+                  <li>
+                  	<a href="/list-of-532nm-f-theta-lens.html">
+                    	<div class="title">532nm激光场镜</div>
+                        <img src="/images/products/W532.jpg" alt="532nm激光场镜"/>
+                        <div class="des">532nm激光场镜适用于所有工作波长为532nm的各类激光设备，用于玻璃切割和内雕等应用。</div>
+                    </a>
+                  </li>
+                  <li>
+                  	<a href="/list-of-355nm-f-theta-lens.html">
+                    	<div class="title">355nm激光场镜</div>
+                        <img src="/images/products/W355.jpg" alt="355nm激光场镜"/>
+                        <div class="des">355nm激光场镜适用于所有工作波长为355nm的各类激光设备，用于精密加工和玻璃加工等。</div>
+                    </a>
+                  </li>
+                  <li>
+                  	<a href="/list-of-fused-sillica-f-theta-lens.html">
+                    	<div class="title">石英场镜</div>
+                        <img src="/images/products/Fused-sillica.jpg" alt="石英激光场镜"/>
+                        <div class="des">基于石英玻璃的低膨胀系数和耐能量冲击的特性，石英激光场镜主要用于精密激光加工或者大功率激光加工。</div>
+                    </a>
+                  </li>
+                  <li>
+                  	<a href="/list-of-telecentric-f-theta-lens.html">
+                    	<div class="title">远心场镜</div>
+                        <img src="/images/products/telecentric.jpg" alt="远心激光场镜"/>
+                        <div class="des">远心激光场镜通过精密设计，使工作区域内的每束光都垂直聚焦在工作面上，主要用于精密激光加工。</div>
+                    </a>
+                  </li>
+                  <li>
+                    	<div class="title">耐辐照镜头</div>
+                        <img src="/images/products/F100FT-W1064/F100FT-W1064-01.jpg" alt="耐辐照镜头"/>
+                        <div class="des">耐辐照镜头是我公司最近研发的用于高辐照特殊工况下的特种镜头。采用特殊的耐辐照材料，保证高品质成像的前提下耐高射线辐照。</div>
+                  </li>
+                </ul>
+              </div>
+              <span class="goright prevPage"><a href="javascript:void(0)"><img src="/Assets/images/next.png" /></a></span> </div>
+            <script>
+            $(function(){
+            $('.mainPhoto .slidegrid').scrollable({size:4,circular:true,next:'.nextPage',prev:'.prevPage'}).autoscroll();
+            });	
+            </script> 
+            <div class="i_more"><a href="product.html">更多产品</a></div>
+        </div>
+    </div>
+</div>
