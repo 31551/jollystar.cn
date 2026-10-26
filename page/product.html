@@ -1,0 +1,72 @@
+﻿---
+layout: page
+permalink: /product.html
+category: products
+title: 产品中心 - 激光场镜， 北京卓瑞斯， 远心场镜， 激光加工， 激光精密加工
+keywords: 激光场镜， 北京卓瑞斯， 远心场镜， 激光加工， 激光精密加工
+description: 
+---  
+    <!-- 内容 -->
+<div class="banner_s"><img src="Assets/upload/banner_d.jpg" alt=""/></div>
+<div class="scd_bg">
+	<div class="wrap scd clearfix">
+    	<div class="pro">
+        	<div class="pro_a clearfix">
+            	<span>产品分类：</span>
+                <a href="list-of-1064nm-f-theta-lens.html">1064nm场镜</a>
+                <a href="list-of-532nm-f-theta-lens.html">532nm场镜</a>
+                <a href="list-of-355nm-f-theta-lens.html">355nm场镜</a>
+                <a href="list-of-fused-sillica-f-theta-lens.html">石英场镜</a>
+                <a href="list-of-telecentric-f-theta-lens.html">远心场镜</a>
+				<a href="list-of-achromatic-f-theta-lens.html">消色差场镜</a>
+                <a href="">定制镜头</a>
+				<a href="">保护镜片</a>
+                <a href="">扩束镜头</a>
+                
+            </div>
+            <div class="pro_b">
+            	<table border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <th scope="col">1064nm f-theta lens.<br/>1064nm激光场镜</th>
+                    <th scope="col">产品编号</th>
+                    <th scope="col">焦距</th>
+                   <!--      <th scope="col">扫描角度</th>  -->
+                    <th scope="col">工作范围</th>
+                    <th scope="col">入射光斑</th>
+                    <th scope="col">聚焦光斑</th>
+                    <th scope="col">D1 + D2</th>
+                    <th scope="col">螺纹接口</th>
+                  <!--   <th scope="col">参数文件</th>  -->
+                  </tr>
+                 {% for post in site.tags["1064nm激光场镜"] %}	
+				  <tr>
+						<td align="center" width="222"> <a href="{{ post.permalink }}">{{ post.type  }}</a></td>
+						<td align="center">{{ post.typeno }}</td>
+						<td align="center">{{ post.efl  }}</td>
+					 <!--    	<td align="center">{{ post.scanangle }}</td>  -->
+						<td align="center">{{ post.workarea  }}</td>
+						<td align="center">{{ post.inbeammax  }}</td>
+						<td align="center">{{ post.Encircledenergy  }}</td>
+						<td align="center">{{ post.Xmirrordistancemax  }}</td>
+						<td align="center">{{ post.Mountingthread  }}</td>
+		<!--				<td align="center">
+						<a href="/docs/products/{{ post.type }}.zip" target="_blank"><img src="/images/dl.png"></a></p>
+						</td>   -->
+					
+				  </tr>
+				{% endfor %}				
+                </table>
+				<ul class="pro_l clearfix">
+				{% for post in site.tags["1064nm激光场镜"] %}
+                	<li>
+                    	<a href="{{ post.permalink }}">
+                        	<img src="images/products/{{ post.image }}/{{ post.image }}-01.jpg" alt="{{ post.title }}" />
+                            <p>{{ post.title }}</p>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+		</div>
+    </div>
+</div>
