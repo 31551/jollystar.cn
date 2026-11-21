@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="us-EN">
+<html lang="zh-CN">
  <head> 
   <meta charset="utf-8" /> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
@@ -9,7 +9,7 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
  
   <link href="css/bootstrap.min.css" rel="stylesheet" /> 
-  <link href="css/global.css" rel="stylesheet" /> 
+  <link rel="stylesheet" href="{{ '/css/global.css' | relative_url }}"> 
   <script src="js/shover.min.js"></script> 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NSFP8WTNZ"></script>
@@ -25,7 +25,7 @@
  <body> 
   <div class="pcto pc"> 
    <div class="pcto_box pc"> 
-    <a href="" class="fl pcto_logo"><img src="picture/logo.webp" height="55" /></a> 
+    <a href="" class="fl pcto_logo"><img src="{{ '/picture/logo.webp' | relative_url }}" alt="JOLLYSTAR" height="55" /></a> 
     <div class="pcto_menu"> 
      <div class="pcto_menu_xun"> 
       <a href="index.html" class="pcto_menu_a">网站首页</a> 
@@ -66,7 +66,7 @@
    </div> 
   </div> 
   <div class="mot mo"> 
-   <a href="" class="molo"><img src="picture/logo.webp" /></a> 
+   <a href="" class="molo"><img src="{{ '/picture/logo.webp' | relative_url }}" alt="JOLLYSTAR"></a> 
    <img src="picture/bg37.webp" class="momenuicon openicon" /> 
    <img src="picture/bg36.webp" class="momenuicon cloesicon" /> 
   </div> 
@@ -186,19 +186,19 @@
       <tbody>
        <tr> 
         <td height="60" width="32" class="footericon"><img src="picture/bg8.webp" /></td> 
-        <td><span> <p style="line-height:12px;">TELEPHONE</p> <a rel="nofollow" href="tel:+861086461168"><p style="font-size:21px;color:#FFFFFF; font-weight:bolder; line-height:21px;">010-86461168</p></a> </span></td> 
+        <td><span> <p style="line-height:12px;">TELEPHONE</p> <a rel="nofollow" href="tel:{{ site.tel }}"><p style="font-size:21px;color:#FFFFFF; font-weight:bolder; line-height:21px;">{{ site.tel }}</p></a> </span></td> 
        </tr> 
        <tr> 
         <td align="right" height="25" class="footericon"><img src="picture/bg9.webp" /></td> 
-        <td><span>公司地址：北京市平谷区平谷镇岳各庄八蜡庙路33号</span></td> 
+        <td><span>公司地址：{{ site.address }}</span></td> 
        </tr> 
        <tr> 
         <td align="right" height="25" class="footericon"><img src="picture/bg10.webp" /></td> 
-        <td><span>邮箱：</span><a href="mailto:jollystar@jollystar.cn"><span>jollystar@jollystar.cn</span></a></td> 
+        <td><span>邮箱：</span><a href="mailto:{{ site.email }}"><span>{{ site.email }}</span></a></td> 
        </tr> 
        <tr> 
         <td align="right" height="25" class="footericon"><img src="picture/bg11.webp" /></td> 
-        <td><span>手机：</span><a rel="nofollow" href="tel:+8618613302256"><span>18613302256</span></a></td> 
+        <td><span>手机：</span><a rel="nofollow" href="tel:{{ site.mobile }}"><span>{{ site.mobile }}</span></a></td> 
        </tr> 
       </tbody>
      </table> 
@@ -221,7 +221,7 @@
   <div class="phonefooternav visible-xs visible-sm">
 	    <ul>
 	        <li>
-	            <a rel="nofollow" href="tel:+8618613302256">
+	            <a rel="nofollow" href="tel:{{ site.mobile }}">
 	                <i class="glyphicon glyphicon-earphone"></i>
 	                <span>一键拨号</span>
 	            </a>
