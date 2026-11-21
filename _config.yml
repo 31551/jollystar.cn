@@ -1,6 +1,28 @@
 # Site
 title: 北京卓瑞斯光电科技有限公司
 
+description: >-
+  北京卓瑞斯光电科技有限公司专注于
+  激光光学元件及激光光学系统的研发、
+  生产与销售。
+
+url: "https://www.jollystar.cn"
+baseurl: ""
+
+lang: zh-CN
+
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product
+
 address: 北京市平谷区平谷镇岳各庄八蜡庙路33号
 
 contact: 周经理
